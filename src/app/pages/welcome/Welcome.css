@@ -1,0 +1,129 @@
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "OFL Sorts Mill Goudy TT", sans-serif;
+    --text-color: black;
+}
+
+body {
+    background-color: white;
+}
+
+.auth_cont {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top:20px ;
+}
+.input-mask_phone {
+    font-family: var(--font-family);
+    font-weight: 275;
+    font-size: calc(2rem + 1vw);
+    letter-spacing: 0.14em;
+    text-align: center;
+    color: var( --text-color);
+    padding: 1rem;
+}
+.wrapper {
+    max-width: 2560px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 25%;
+  }
+.auth {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    display: block;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: calc(6rem + 1vw);
+    text-align: center;
+    color: var(--text-color);
+    padding: 10px;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    align-items: center;
+}
+.custom-logo{
+    padding: 10rem;
+}
+
+
+.form_tel {
+    display: block;
+    text-align: center;
+}
+
+label span {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: calc(1rem + 1vw);
+    text-align: center;
+    color: var( --text-color);
+}
+
+input {
+    background-color: inherit;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 25px;
+    width: 90%;
+    height: 100%;
+    margin:20px;
+    padding: 50px;
+
+}
+
+button {
+    align-self: center;
+    background: #c4c5c6;
+    border-radius: 25px;
+    width: 70%;
+    height: 100%;
+    font-size: 36px;
+    padding: 20px;
+    margin: 0px;
+    transition: box-shadow 1s;
+}
+button:hover {
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+button:active{
+    box-shadow: 4px 4px 8px 1px rgba(34, 60, 80, 0.2) inset;
+}
+.pinBox {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .pinEntry {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 24px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .pinEntry:focus {
+    border-color: #007bff; /* Цвет границы при фокусе */
+  }

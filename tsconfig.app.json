@@ -1,19 +1,33 @@
-/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
-/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
-  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./out-tsc/app",
-    "types": [
-      "node"
-    ]
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+ 
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+ 
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+    "baseUrl": "src",
+    "paths": {
+      "components": ["components/*"],
+      "config": ["config/*"],
+      "styles": ["styles/*"],
+      "utils": ["utils/*"]
+    }
   },
-  "files": [
-    "src/main.ts",
-    "src/main.server.ts",
-    "server.ts"
-  ],
-  "include": [
-    "src/**/*.d.ts"
-  ]
+  "include": ["src"]
 }
