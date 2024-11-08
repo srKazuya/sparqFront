@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from'react-router-dom';
 const App = () => {
 
   return (
-    <div>
+    <div className='cont'>
       <Router>
         <Routes>
           <Route path="*" element={<Welcome />} />

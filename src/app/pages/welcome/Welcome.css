@@ -12,23 +12,26 @@ body {
     display:flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 100vh;
     padding-top:20px ;
 }
 .input-mask_phone {
     font-family: var(--font-family);
     font-weight: 275;
-    font-size: calc(2rem + 1vw);
+    font-size: 2vw;
     letter-spacing: 0.14em;
     text-align: center;
     color: var( --text-color);
     padding: 1rem;
+    margin: 0;
+    width: 100%;
 }
 .wrapper {
     max-width: 2560px;
     width: 100%;
+    height: 100vh;
     margin: 0 auto;
-    padding: 0 25%;
+ 
   }
 .auth {
     width: auto;
@@ -40,28 +43,32 @@ h2 {
     display: block;
     font-family: var(--font-family);
     font-weight: 600;
-    font-size: calc(6rem + 1vw);
+    font-size: 9vw;
     text-align: center;
     color: var(--text-color);
     padding: 10px;
     margin: 0;
+    width: 70%;
+    align-self: center;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 33px;
+    justify-content: space-around;
     align-items: center;
+    gap: 1rem;
 }
 
 label {
     display: flex;
     flex-direction: column;
-    gap: 13px;
+    width: 70%;
+    gap: 1rem;
     align-items: center;
 }
 .custom-logo{
-    padding: 10rem;
+   height: 40%;;
 }
 
 
@@ -73,7 +80,7 @@ label {
 label span {
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: calc(1rem + 1vw);
+    font-size: 2vw;
     text-align: center;
     color: var( --text-color);
 }
@@ -96,7 +103,7 @@ button {
     border-radius: 25px;
     width: 70%;
     height: 100%;
-    font-size: 36px;
+    font-size: 3vw;
     padding: 20px;
     margin: 0px;
     transition: box-shadow 1s;
