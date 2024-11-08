@@ -145,3 +145,7 @@
     font-weight: 900;
     src: url('./assets/fonts/montserrat-v26-cyrillic_latin-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
+.cont{
+  margin: 0 auto 0 auto;
+  width: 100%;
+  }
