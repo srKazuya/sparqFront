@@ -1,0 +1,24 @@
+.dashboard-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 5% ;
+    background-color: #191B24;
+    align-items: center;
+}
+.dashboard-button_container {
+    padding: 0;
+    width: auto !important;
+    height: auto;
+    background-color: inherit;
+}
+.dashboard-button_container:focus{
+    border:none;
+    outline: none;
+}
+.dashboard-grp_btn{
+    display: flex;
+    flex-direction: column;
+
+}

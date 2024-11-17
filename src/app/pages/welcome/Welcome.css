@@ -4,9 +4,7 @@
     --text-color: black;
 }
 
-body {
-    background-color: white;
-}
+
 
 .auth_cont {
     display:flex;
