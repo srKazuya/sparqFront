@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
-import SendCode from './components/SendCode';
 import ConfirmCode from './components/ConfirmCode';
+import RegName from './components/RegName';
 import './Welcome.css'
+import RegBDay from './components/RegBDay';
+import SendCode from './components/SendCode';
+import AddEmail from './components/AddEmail'
+import ConfirmEmail from './components/ConfirmEmail'
 
 const Welcome: React.FC = () => {
   const navigate = useNavigate();
@@ -11,7 +15,7 @@ const Welcome: React.FC = () => {
 
   const handleCodeSent = (phone: string) => {
     setPhoneNumber(phone);
-    navigate('/confirm')
+    navigate('/reg/confirmcode')
   };
 
   const handleVerificationSuccess = (code: string) => {
@@ -36,8 +40,12 @@ const Welcome: React.FC = () => {
         <path d="M228.775 160.649C235.225 188.182 219.058 252.283 145.159 256.156C71.2605 260.029 36.3272 176.242 43.7752 127.285C51.2231 78.3283 67.9428 53.423 95.8845 22.9153C100.698 17.6597 2.71131 79.3726 7.86621 177.734C11.4217 245.577 68.5779 293.994 123.152 304.374C147.933 309.087 196.869 306.523 234.402 268.005C250.746 251.232 264.984 192.301 228.775 160.649Z" stroke="#191B24" />
       </svg>
       <Routes>
-        <Route path="/" element={<SendCode onCodeSent={handleCodeSent} />} />
-        <Route path="/confirm" element={<ConfirmCode onVerify={handleVerificationSuccess} />} />
+        <Route path="/" element={<RegName />} />
+        <Route path="/reg/regbday" element={<RegBDay />} />
+        <Route path="/reg/enteremail" element={<AddEmail />} />
+        <Route path="/reg/confirmemail" element={<ConfirmEmail />} />
+        <Route path="/reg/sendcode" element={<SendCode onCodeSent={handleCodeSent} />} />
+        <Route path="/reg/confirmcode" element={<ConfirmCode onVerify={handleVerificationSuccess} />} />
       </Routes>
 
     </div>

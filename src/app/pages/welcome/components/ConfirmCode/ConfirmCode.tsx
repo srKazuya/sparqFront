@@ -26,7 +26,7 @@ const ConfirmCode: FC<ConfirmCodeProps> = ({ onVerify }) => {
       if (response.ok) {
         console.log('Код верный, авторизация успешна!');
         onVerify(verificationCode);
-        navigate('/dashboard');
+        navigate('/messenger');
       } else {
 
         console.log('Неверный код подтверждения.');
