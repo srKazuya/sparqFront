@@ -1,4 +1,7 @@
 .messenger-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr 20fr;
+    grid-template-rows: auto;
     width: 100%;
     height: 100%;
     

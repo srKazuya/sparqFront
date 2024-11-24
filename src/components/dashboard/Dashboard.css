@@ -1,11 +1,13 @@
 .dashboard-container {
+    width: auto;
+    padding-top: 1.8rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 5% ;
-    background-color: #191B24;
+    background-color: #1f222d;
     align-items: center;
+
 }
 .dashboard-button_container {
     padding: 0;

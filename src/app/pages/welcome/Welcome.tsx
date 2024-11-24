@@ -39,7 +39,6 @@ const Welcome: React.FC = () => {
         <Route path="/" element={<SendCode onCodeSent={handleCodeSent} />} />
         <Route path="/confirm" element={<ConfirmCode onVerify={handleVerificationSuccess} />} />
       </Routes>
-
     </div>
   );
 };

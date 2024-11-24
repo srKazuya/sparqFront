@@ -1,7 +1,9 @@
 
 import React from 'react';
 import Dashboard from '../../../components/dashboard';
-import { Routes, Route } from 'react-router-dom' 
+import MessageList from './components/messageList';
+import MessageArea from './components/messageArea';
+
 import './Messenger.css'
 
 const Messenger: React.FC = () => {
@@ -9,7 +11,10 @@ const Messenger: React.FC = () => {
     <div className='messenger-container'>
 
       <Dashboard />
-
+      <MessageList />
+      <MessageArea />
+      
+    
     </div>
 
   );
