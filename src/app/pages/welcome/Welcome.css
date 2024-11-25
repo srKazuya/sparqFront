@@ -134,3 +134,135 @@ button:active{
   .pinEntry:focus {
     border-color: #007bff; /* Цвет границы при фокусе */
   }
+  
+  .h2_Reg {
+    margin: 0 auto;
+    display: block;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: calc(2vw + 2rem);
+    text-align: center;
+    color: var(--text-color);
+    padding: 10px;
+    width: 70%;
+    align-self: center;
+}
+
+.span_RegName {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: calc(1vw + 0rem);
+    text-align: center;
+    color: var( --text-color);
+}
+
+.Form_RegName{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.Form_RegName span{
+    width: 100%;
+    font-size: calc(1vh + 1.65rem );
+}
+
+.Form_RegName label{
+    width: 100%;
+    font-size: calc(1vh + 2.4rem);
+}
+
+.Form_RegName input{
+    padding: 20px;
+    margin: 0.4rem;
+    font-size: calc(1vw + 2.4rem);
+    
+}
+
+
+
+.text_RegBDay{
+    width: 100%;
+    font-size: calc(1vh + 1.75rem);
+    text-align: center;
+}
+
+.wrapper_RegBDay_Form{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.wrapper_RegBDay_Form2{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.Form_RegBDay{
+    width: 31%;
+    margin: 0 auto;
+}
+
+.wrapper_RegBDay_Form input{
+    padding: 30px 10px 30px 25px;
+    font-size: calc(1vh + 1rem);
+}
+
+.Select_Gender{
+    background-color: inherit;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 25px;
+    width: 96%;
+    height: 100%;
+    margin: 20px;
+    padding: 25px 10px 25px 10px;
+    font-size: calc(1vh + 2rem);
+}
+
+.BDay_Gender_label{
+    width: 100%;
+
+}
+
+.span_AddEmail {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: calc(1vw + 0rem);
+    text-align: center;
+    color: var( --text-color);
+    margin: 0 auto;
+}
+
+.Form__Email{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.Form__Email input{
+    font-size: calc(1vh + 2.4rem);
+    padding: 20px 10px 20px 10px;
+}
+
+.Add_Email_button{
+    width: 50%;
+    padding: 10px 10px 10px 10px;
+}
+
+.Email__Form__wrapper{
+    width: 100%;
+}
+
+.EnterCode_Form{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.EnterCode_Form input{
+    font-size: calc(1vh + 2.4rem);
+    padding: 20px 10px 20px 10px;
+}
+
+.EnterCode_button{
+    width: 50%;
+    padding: 10px 10px 10px 10px;
+}
