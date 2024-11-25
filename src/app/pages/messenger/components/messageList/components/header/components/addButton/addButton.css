@@ -1,0 +1,18 @@
+.messageLi-button {
+    margin-left: 2rem;
+    margin-top: auto;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #191b24;
+    cursor: pointer;
+    padding: 0;
+
+}
+.messageLi-button:focus {
+    outline: none;
+}

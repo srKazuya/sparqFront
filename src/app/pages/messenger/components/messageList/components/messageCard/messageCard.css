@@ -1,0 +1,53 @@
+.message-item {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+
+    margin: 0;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover;
+}
+
+.message-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.username {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #E6E8F0;
+}
+
+.timestamp {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #AAB2C0;
+}
+
+.timestamp svg {
+    margin-right: 4px;
+}
+
+.message-text {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #AAB2C0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

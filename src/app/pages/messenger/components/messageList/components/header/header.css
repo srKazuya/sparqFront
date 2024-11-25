@@ -1,0 +1,6 @@
+.messageLi-header_cont{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    padding: 3rem;
+}

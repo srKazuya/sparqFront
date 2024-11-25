@@ -1,0 +1,6 @@
+.messageArea-header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    box-shadow: 3px 6px 5px 0px rgb(0 0 0 / 41%);
+}

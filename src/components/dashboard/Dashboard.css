@@ -1,0 +1,26 @@
+.dashboard-container {
+    width: auto;
+    padding-top: 1.8rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1f222d;
+    align-items: center;
+
+}
+.dashboard-button_container {
+    padding: 0;
+    width: auto !important;
+    height: auto;
+    background-color: inherit;
+}
+.dashboard-button_container:focus{
+    border:none;
+    outline: none;
+}
+.dashboard-grp_btn{
+    display: flex;
+    flex-direction: column;
+
+}
