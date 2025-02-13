@@ -1,6 +1,8 @@
+import Drive from "./Components/Drive";
+
 const WorkSpace = () => {
     return(
-        <div>WorkSpace</div>
+        <div><Drive/></div>
     )
 }
 

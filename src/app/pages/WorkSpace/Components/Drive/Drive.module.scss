@@ -1,0 +1,27 @@
+@use '@styles/variables' as *;
+
+.root_block {
+    background: $dark;
+    width: 354px;
+    height: 282px;
+    border-radius: 15px;
+    border-top: 14px solid #353B42;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+
+        &__title{
+            margin-bottom: 6px;
+            margin-top: 20px;
+        }
+
+        &__folder_icon{
+            padding-top: 26px;
+            padding-right: 25px;
+        }
+    }
+
+
+}

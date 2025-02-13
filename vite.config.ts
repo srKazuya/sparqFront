@@ -32,7 +32,9 @@ export default defineConfig({
   resolve: {
     alias: {
       ...aliases, // Добавляем алиасы из tsconfig
-      '@assets': path.resolve(__dirname, './src/app/assets'), // Явный алиас для @assets
+      '@assets': path.resolve(__dirname, './src/assets'), // Явный алиас для @assets
+      '@styles': path.resolve(__dirname, './src/styles'),
+      '@components': path.resolve(__dirname, './src/components'),
     },
   },
 });

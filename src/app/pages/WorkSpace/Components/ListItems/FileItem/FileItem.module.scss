@@ -1,0 +1,51 @@
+@use '@styles/variables' as *;
+
+.item {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    padding-top: 10px;
+    justify-content: space-between;
+  }
+
+a {
+    display: inline-block;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: $primary;
+    font-size: 20px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    vertical-align: middle;
+  }
+
+a[href$=".pdf"]::before,
+a[href$=".doc"]::before,
+a[href$=".docx"]::before,
+a[href$=".zip"]::before,
+a[href$=".PDF"]::before,
+a[href$=".DOC"]::before,
+a[href$=".DOCX"]::before,
+a[href$=".ZIP"]::before {
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-right: 8px;
+}
+
+a[href$=".pdf"]::before,
+a[href$=".PDF"]::before {
+  background-image: url('../../../../../../assets/icons/pdf_icon.svg');
+}
+
+.time {
+    margin-right: 12px;
+}
