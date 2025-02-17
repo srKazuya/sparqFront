@@ -1,0 +1,17 @@
+.root {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .primary {
+    color: #000000;
+  }
+  
+  .secondary {
+    color: #afadb5;
+  }
+  
+  .accent {
+    color: #518581;
+  }
+  

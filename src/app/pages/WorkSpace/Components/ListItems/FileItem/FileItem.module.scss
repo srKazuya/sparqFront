@@ -3,9 +3,11 @@
 .item {
     display: flex;
     align-items: center;
-    padding-left: 12px;
-    padding-top: 10px;
     justify-content: space-between;
+
+    &:hover{
+      background-color: $light_gray;
+    }
   }
 
 a {
@@ -20,12 +22,21 @@ a {
     overflow: hidden; 
     text-overflow: ellipsis;
     vertical-align: middle;
+    padding-left: 8px;
+
+    &:hover {
+      color: $primary;
+    }
   }
 
 a[href$=".pdf"]::before,
+a[href$=".jpg"]::before,
+a[href$=".css"]::before,
 a[href$=".doc"]::before,
 a[href$=".docx"]::before,
 a[href$=".zip"]::before,
+a[href$=".JPG"]::before,
+a[href$=".CSS"]::before,
 a[href$=".PDF"]::before,
 a[href$=".DOC"]::before,
 a[href$=".DOCX"]::before,
@@ -46,6 +57,28 @@ a[href$=".PDF"]::before {
   background-image: url('../../../../../../assets/icons/pdf_icon.svg');
 }
 
+a[href$=".doc"]::before,
+a[href$=".DOC"]::before {
+  background-image: url("../../../../../../assets/icons/doc_icon.svg");
+}
+
+a[href$=".docx"]::before,
+a[href$=".DOCX"]::before {
+  background-image: url("../../../../../../assets/icons/doc_icon.svg");
+}
+
+a[href$=".jpg"]::before,
+a[href$=".JPG"]::before {
+  background-image: url("../../../../../../assets/icons/jpg_icon.svg");
+}
+
+a[href$=".css"]::before,
+a[href$=".CSS"]::before {
+  background-image: url("../../../../../../assets/icons/css_icon.svg");
+}
+
 .time {
     margin-right: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

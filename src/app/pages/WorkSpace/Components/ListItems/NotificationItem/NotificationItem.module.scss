@@ -1,0 +1,43 @@
+@use '@styles/variables' as *;
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    max-width: 100%;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $light_gray;
+    }
+}
+
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #F77F7F;
+}
+
+.orange {
+    background-color: #FFA217;
+}
+
+.white {
+    background-color: #CFD2E8;
+}
+
+
+.notification_text {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    display: block;
+}

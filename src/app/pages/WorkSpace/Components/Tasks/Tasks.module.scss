@@ -9,36 +9,36 @@
     display: flex;
     flex-direction: column;
     position: relative;
+}
 
-    &__header {
-        display: flex;
-        justify-content: space-between;
-        padding-left: 10px;
-        flex-shrink: 0;
+.root_block__header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    flex-shrink: 0;
 
-        &__title{
-            margin-bottom: 6px;
-            margin-top: 10px;
-        }
+    &__title {
+        margin-bottom: 6px;
+        margin-top: 10px;
+    }
 
-        &__folder_icon{
-            padding-top: 16px;
-            padding-right: 25px;
-        }
+    &__task_icon {
+        padding-top: 6px;
+        padding-right: 25px;
     }
 }
 
-.file_list {
+.task_list {
     flex-grow: 1;
-        max-height: 160px;
-        overflow-y: auto;
-        padding-right: 5px;
-        scrollbar-width: none; // Для Firefox
-        -ms-overflow-style: none; // Для IE/Edge
+    max-height: 160px;
+    overflow-y: auto;
+    padding-right: 5px;
+    scrollbar-width: none; // Firefox
+    -ms-overflow-style: none; // IE/Edge
 
-        &::-webkit-scrollbar {
-            display: none; // Для Chrome/Safari
-        }
+    &::-webkit-scrollbar {
+        display: none; // Chrome/Safari
+    }
 }
 
 .pagination {
@@ -49,7 +49,6 @@
     height: 24px;
     cursor: pointer;
     transition: opacity 0.3s;
-
 
     &.hidden {
         opacity: 0;
@@ -66,6 +65,6 @@
     }
 }
 
-hr{
+hr {
     width: 352px;
 }
