@@ -1,0 +1,70 @@
+@use '@styles/variables' as *;
+
+.root_block {
+  background: $dark;
+  width: 354px;
+  height: 282px;
+  border-radius: 15px;
+  border-top: 14px solid #353B42;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    flex-shrink: 0;
+
+    &__title {
+      margin-bottom: 6px;
+      margin-top: 10px;
+    }
+
+    &__camera__icon {
+      padding-top: 8px;
+      padding-right: 24px;
+    }
+  }
+}
+
+.calls_list {
+  flex-grow: 1;
+  max-height: 160px;
+  overflow-y: auto;
+  padding-right: 5px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.pagination {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &__icon {
+    color: #CFD2E8;
+    width: 16px;
+    height: 16px;
+    border-left: 2px solid #CFD2E8;
+    border-bottom: 2px solid #CFD2E8;
+    transform: rotate(-45deg);
+  }
+}
+
+hr {
+  width: 352px;
+}
