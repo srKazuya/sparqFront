@@ -1,0 +1,21 @@
+@use '@styles/variables' as *;
+
+.cont{
+    background: $dark;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 2.3rem;
+    & svg:first-of-type{
+        margin: 10px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+    & h1 {
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+    & *{
+        margin: 0;
+    }
+}

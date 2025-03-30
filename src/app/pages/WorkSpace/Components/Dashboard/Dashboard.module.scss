@@ -1,0 +1,9 @@
+@use '@styles/variables' as *;
+
+.mainCont {
+    display: flex;
+    flex-direction: column;
+    background-color: $dark;
+    height: 100%;
+ 
+}
