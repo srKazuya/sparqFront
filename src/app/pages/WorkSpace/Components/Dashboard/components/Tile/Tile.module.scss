@@ -3,7 +3,7 @@
 .menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; // Разделяем верхние и нижние элементы
+    justify-content: space-between; 
     height: 100vh;
     padding: 20px;
     background-color: $dark; 
@@ -12,13 +12,15 @@
 .menuItemsTop {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 1.5rem;
+    justify-items: center;
 }
 
 .menuItemsBottom {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    justify-items: center;
+    gap: 1.5rem;
 }
 
 .menuItem {
@@ -44,8 +46,11 @@
     }
 
     span {
+        width: 100%;
+        padding: 0 1rem 0 1rem;
         margin-top: 8px;
-        font-size: 14px;
+        font-size: clamp(1rem, 1rem, 2rem);
+        text-align: center;
         color: rgba(255, 255, 255, 0.7);
     }
 }
