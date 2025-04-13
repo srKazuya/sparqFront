@@ -79,7 +79,7 @@ const menuItems = [
     },
 ];
 
-const Tile = () => {
+const Tile = ({ onAddButtonClick }: { onAddButtonClick: () => void }) => {
     const topItems = menuItems.slice(0, -2); 
     const bottomItems = menuItems.slice(-2); 
 
@@ -87,7 +87,8 @@ const Tile = () => {
         <div className={styles.menu}>
             <div className={styles.menuItemsTop}>
                 {topItems.map((item, index) => (
-                    <div key={index} className={styles.menuItem}>
+                    <div key={index} className={styles.menuItem}
+                    onClick={item.label === 'Добавить' ? onAddButtonClick : undefined}>
                         {item.icon}
                         <span>{item.label}</span>
                     </div>
