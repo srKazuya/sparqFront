@@ -4,7 +4,12 @@ import Text from '@components/Text';
 import Folder from '@components/Icons/Folder';
 import FileItem from '../ListItems/FileItem';
 
-
+export const DriveText = () => (
+    <Text
+    >
+        Последние
+    </Text>
+);
 const Drive = () => {
     const fileListRef = useRef<HTMLDivElement>(null);
     const [canScroll, setCanScroll] = useState(false);

@@ -89,7 +89,7 @@ const Tile = ({ onAddButtonClick }: { onAddButtonClick: () => void }) => {
                 {topItems.map((item, index) => (
                     <div key={index} className={styles.menuItem}
                     onClick={item.label === 'Добавить' ? onAddButtonClick : undefined}>
-                        {item.icon}
+                        <span>{item.icon}</span>
                         <span>{item.label}</span>
                     </div>
                 ))}
@@ -97,7 +97,7 @@ const Tile = ({ onAddButtonClick }: { onAddButtonClick: () => void }) => {
             <div className={styles.menuItemsBottom}>
                 {bottomItems.map((item, index) => (
                     <div key={index} className={styles.menuItem}>
-                        {item.icon}
+                        <span>{item.icon}</span>
                         <span>{item.label}</span>
                     </div>
                 ))}

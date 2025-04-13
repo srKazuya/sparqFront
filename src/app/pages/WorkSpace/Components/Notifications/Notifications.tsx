@@ -3,7 +3,12 @@ import styles from './Notifications.module.scss';
 import Text from '@components/Text';
 import NotificationItem from '../ListItems/NotificationItem';
 import logo from '@assets/icons/profile_test_icon.svg';
-
+export const NotificationsText = () => (
+    <Text
+    >
+        Уведомления
+    </Text>
+);
 const Notifications = () => {
     const listRef = useRef<HTMLDivElement>(null);
     const [showArrow, setShowArrow] = useState(false);

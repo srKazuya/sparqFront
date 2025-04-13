@@ -4,6 +4,12 @@ import Text from '@components/Text';
 import TaskIcon from '@components/Icons/Task';
 import TaskItem from '../ListItems/TaskItem/TaskItem';
 
+export const TasksText = () => (
+    <Text
+    >
+            Задачи
+    </Text>
+);
 const Tasks = () => {
     const taskListRef = useRef<HTMLDivElement>(null);
     const [canScroll, setCanScroll] = useState(false);

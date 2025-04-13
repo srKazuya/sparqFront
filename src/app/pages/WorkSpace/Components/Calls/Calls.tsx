@@ -3,7 +3,12 @@ import CameraIcon from '@components/Icons/CameraIcon';
 import styles from './Calls.module.scss';
 import Text from '@components/Text';
 import CallItem from '../ListItems/CallItem';
-
+export const CallsText = () => (
+  <Text
+  >
+      Созвоны
+  </Text>
+);
 const Calls = () => {
   const callsListRef = useRef<HTMLDivElement>(null);
   const [canScroll, setCanScroll] = useState(false);
