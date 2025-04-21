@@ -5,10 +5,10 @@ import { NotificationsText } from "../../../Notifications"
 import { TasksText } from "../../../Tasks"
 
 
-const AddList = () =>{
-
+const AddList = ({ onReturnButtonClick }: { onReturnButtonClick: () => void }) =>{
     return (
         <div>
+        <button onClick={onReturnButtonClick}>Назад</button>
             <DriveText />
             <TasksText />
             <NotificationsText />

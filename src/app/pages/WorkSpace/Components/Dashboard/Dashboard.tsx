@@ -13,7 +13,7 @@ const Dashboard = () => {
             <Header />
             {showAddComponents ? (
                 <div className={styles.fadeIn}>
-                    <AddList />
+                    <AddList onReturnButtonClick={() => setShowAddComponents(false)} />
                 </div>
             ) : (
                 <Tile onAddButtonClick={() => setShowAddComponents(true)} />
