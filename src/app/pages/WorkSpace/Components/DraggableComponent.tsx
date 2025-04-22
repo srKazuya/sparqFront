@@ -59,7 +59,7 @@ const DraggableComponent: FC<DraggableComponentProps> = ({ id, index, moveItem, 
                 type: "spring",
                 stiffness: 600, 
                 damping: 25,    
-                mass: 0.8,     
+                mass: 0.1,     
             }}
             style={{
                 opacity: isDragging ? 0.6 : 1, 
