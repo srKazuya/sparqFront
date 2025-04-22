@@ -41,7 +41,6 @@ const DraggableComponent: FC<DraggableComponentProps> = ({ id, index, moveItem, 
     layout
     layoutId={id}
     animate={{
-        scale: isDragging ? 1.03 : 1,
         zIndex: isDragging ? 100 : 1,
     }}
     transition={{
@@ -57,8 +56,6 @@ const DraggableComponent: FC<DraggableComponentProps> = ({ id, index, moveItem, 
     }}
     style={{
         cursor: "grab",
-        width: "100%",
-        height: "100%",
         justifyItems:"center",
     }}
 >
