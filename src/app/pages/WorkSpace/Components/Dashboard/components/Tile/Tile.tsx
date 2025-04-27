@@ -1,5 +1,6 @@
 // import  from 'react';
 import styles from './Tile.module.scss';
+import { useNavigate } from 'react-router-dom';
 
 const menuItems = [
     {
@@ -83,7 +84,7 @@ const Tile = ({ onAddButtonClick }: { onAddButtonClick: () => void }) => {
     const topItems = menuItems.slice(0, -2); 
     const bottomItems = menuItems.slice(-2); 
 
-    return (
+    return (  
         <div className={styles.menu}>
             <div className={styles.menuItemsTop}>
                 {topItems.map((item, index) => (

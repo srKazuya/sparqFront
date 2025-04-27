@@ -5,7 +5,7 @@
     flex-direction: column;
     background-color: $dark;
     height: 100%;
-
+    transition: 0.3s ease-in-out;
 }
 .fadeIn {
     animation: fadeIn 0.5s ease-in-out;

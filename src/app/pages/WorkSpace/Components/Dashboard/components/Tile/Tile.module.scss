@@ -6,7 +6,7 @@
     justify-content: space-between; 
     height: 100vh;
     padding: 20px;
-    background-color: $dark; 
+    background-color: $dark;
 }
 
 .menuItemsTop {
@@ -32,7 +32,7 @@
     border-radius: 12px;
     width: 90px;
     height: 90px;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; 
     cursor: pointer;
 
     &:hover {

@@ -1,9 +1,11 @@
-import { useDrag } from "react-dnd";
-import { CallsText } from "../../../Calls";
-import { DriveText } from "../../../Drive";
-import { IntegrationText } from "../../../Integration";
-import { NotificationsText } from "../../../Notifications";
-import { TasksText } from "../../../Tasks";
+import { useState } from 'react';
+import { useDrag } from 'react-dnd';
+import styles from './AddList.module.scss';
+import { CallsText } from '../../../Calls';
+import { DriveText } from '../../../Drive';
+import { IntegrationText } from '../../../Integration';
+import { NotificationsText } from '../../../Notifications';
+import { TasksText } from '../../../Tasks';
 
 const DraggableItem = ({ type, children }: { type: string; children: React.ReactNode }) => {
     const [{ isDragging }, drag] = useDrag(() => ({
@@ -17,11 +19,7 @@ const DraggableItem = ({ type, children }: { type: string; children: React.React
     return (
         <div
             ref={drag}
-            style={{
-                opacity: isDragging ? 0.5 : 1,
-                cursor: "grab",
-                marginBottom: "10px",
-            }}
+            className={`${styles.draggableItem} ${isDragging ? styles.dragging : ''}`}
         >
             {children}
         </div>
@@ -29,24 +27,39 @@ const DraggableItem = ({ type, children }: { type: string; children: React.React
 };
 
 const AddList = ({ onReturnButtonClick }: { onReturnButtonClick: () => void }) => {
+    const [isExiting, setIsExiting] = useState(false);
+
+    const handleReturn = () => {
+        setIsExiting(true);
+        setTimeout(() => {
+            onReturnButtonClick();
+            setIsExiting(false);
+        }, 300);
+    };
+
     return (
-        <div>
-            <button onClick={onReturnButtonClick}>Назад</button>
-            <DraggableItem type="Drive">
-                <DriveText />
-            </DraggableItem>
+        <div className={`${styles.Dashboard_item} ${isExiting ? styles.slideOut : ''}`}>
             <DraggableItem type="Tasks">
                 <TasksText />
-            </DraggableItem>
-            <DraggableItem type="Notifications">
-                <NotificationsText />
             </DraggableItem>
             <DraggableItem type="Calls">
                 <CallsText />
             </DraggableItem>
+            <DraggableItem type="Drive">
+                <DriveText />
+            </DraggableItem>
             <DraggableItem type="Integration">
                 <IntegrationText />
             </DraggableItem>
+            <DraggableItem type="Notifications">
+                <NotificationsText />
+            </DraggableItem>
+            <button 
+                onClick={handleReturn} 
+                className={styles.Back_btn}
+            >
+                Назад
+            </button>
         </div>
     );
 };
